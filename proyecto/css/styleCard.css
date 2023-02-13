@@ -5,7 +5,7 @@ main * {
   margin: 0;
   padding: 0;
 }
-main > div * {
+main > * {
   border: 1px solid black;
 }
 
@@ -20,43 +20,42 @@ main > nav > ol > li + li::before {
   padding-right: 1em;
 }
 main > nav > ol > li {
-    margin: 0 0.5em;
+  margin: 0 0.5em;
 }
 
 /* card */
 main > nav,
-main > div {
-  width: 50%;
+main > header,
+main > main,
+main > footer {
+  width: 80%;
   margin: 0 auto;
 }
-main > div {
+main {
   display: grid;
   grid-template-rows:
-    [head] auto [img1] 20vh [divParrafos] auto 
+    [nav] auto [head] auto 
+    [img1] 20vh [divParrafos] auto
     [img2] 20vh [parrafo] auto [final];
   text-align: center;
 }
-main > div > :first-child {
+main > header {
   color: red;
 }
-main > div > div {
+main > div {
   background-image: url("../assets/images/landscape.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-main > div > main {
+main > main {
   display: flex;
-  color:yellow
+  color: blue;
 }
-main > div > main > * {
+main > main > * {
   flex: 1;
 }
 @media screen and (max-width: 576px) {
-  main > nav,
-  main > div {
-    width:80%;
-  }
-  main > div > div {
+  main > main {
     flex-direction: column;
   }
 }
