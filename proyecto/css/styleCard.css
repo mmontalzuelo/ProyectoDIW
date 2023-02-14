@@ -35,8 +35,8 @@ main {
   display: grid;
   grid-template-rows:
     [nav] auto [head] auto 
-    [img1] 20vh [divParrafos] auto
-    [img2] 20vh [parrafo] auto [final];
+    [img1] 25vh [divParrafos] auto
+    [img2] 25vh [parrafo] auto [final];
   text-align: center;
 }
 main > header {
