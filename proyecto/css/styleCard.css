@@ -34,7 +34,7 @@ main > footer {
 main {
   display: grid;
   grid-template-rows:
-    [nav] auto [head] auto 
+    [nav] auto [head] auto
     [img1] 25vh [divParrafos] auto
     [img2] 25vh [parrafo] auto [final];
   text-align: center;
@@ -46,6 +46,12 @@ main > div {
   background-image: url("../assets/images/landscape.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
+}
+main > div > p {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
 }
 main > main {
   display: flex;
