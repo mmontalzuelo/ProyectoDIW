@@ -69,9 +69,9 @@
     </nav>
     <!-- Fin BreadCrum -->
     <br><br><br><br>
-      <div class="row row-cols-12 col-md-6 d-flex justify-content-center" style="width:50rem">
+      <div class="row row-cols-10 col-md-6 d-flex justify-content-center" style="width:50rem">
           <div class="row">
-            <div class="row row-cols-12 col-md-6 d-flex justify-content-center">
+            <div class="row row-cols-10 col-md-6 d-flex justify-content-center">
               <a href="#">
                 <img 
                 class="img-fluid" 
@@ -81,17 +81,63 @@
               </a>
             </div>
             <div class="row row-cols-12 col-md-6 d-flex justify-content-center">
-                <h2>CONTACTA CON NOSOTROS</h2>
-                <p class="card-text" type="Nombre:"><input placeholder="¿Cual es tu nombre?"></input></p>
-                <p class="card-text" type="Email:"><input placeholder="Indicamos tu email"></input></p>
-                <p class="card-text" type="Mensaje:"><input placeholder="¿Por que quieres unirte a MAPECHE?"></input></p>
-                <button>Enviar Mensaje</button>
-                <div>
-                  <span class="tel"></span>Teléfono: 983 56 37 12
-                  <br>
-                  <span class="emailEmpresa"></span> Correo Eléctronico: mapeche@mapeche.com
+              <!-- Inicio Formulario -->
+              <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="row row-cols-10 col-md-6 col-form-label">Email</label>
+                  <div class="row row-cols-10 col-md-6">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
                 </div>
-              <a href="#"></a>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="row row-cols-10 col-md-6 col-form-label">Contraseña</label>
+                  <div class="row row-cols-10 col-md-6">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-label row row-cols-10 col-md-6 pt-0">Genero</legend>
+                    <div class="row row-cols-10 col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Hombre
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Mujer
+                        </label>
+                      </div>
+                      <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                          N/C
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group row">
+                  <div class="row row-cols-10 col-md-6">Aceptar</div>
+                  <div class="row row-cols-10 col-md-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="row row-cols-10 col-md-6">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                  </div>
+                </div>
+              </form>
+              <!-- Fin Formulario -->
             </div>
           </div>
         </div>
