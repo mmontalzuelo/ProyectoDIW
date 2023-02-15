@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./css/styleCard.css" />
   </head>
   <body>
-    <header class="row">
+    <header class="container-fluid row">
       <a class="col-6 col-sm-3" href="index.html"
         ><img class="w-100 h-100" src="./assets/images/mapeche.jpg"
       /></a>
       <nav class="col-6 col-sm-9">
         <ul
-          class="list-group list-group-horizontal h-100 text-center align-items-center"
+          class="list-group list-group-horizontal h-100 text-center align-items-center list-inline"
         >
           <li class="col col-sm-3 d-none d-sm-block h-100 border">
             <button class="btn rounded-0 w-100 h-100">
@@ -30,11 +30,7 @@
               <a href="#">Contact</a>
             </button>
           </li>
-          <li
-            class="col-12 col-sm-3 h-100 border"
-            style="list-style-type: none"
-          >
-            <!-- PREGUNTAR -->
+          <li class="col-12 col-sm-3 h-100 border">
             <div class="dropdown h-100">
               <button
                 class="dropdown-toggle rounded-0 w-100 h-100"
@@ -61,34 +57,62 @@
       <nav>
         <ol>
           <li><a href="./index.html">Home</a></li>
-          <li>Library</li>
+          <li>Card</li>
         </ol>
       </nav>
-      <div>
+      <header>
         <h1>Título de card</h1>
+      </header>
         <div>
-          <p>Texto 
-            <br/>sobre la imagen
-            
-          </p>
+          <p>Texto situado sobre <br />la imagen de mapacho</p>
         </div>
         <main>
           <p>Texto/Imagenes en fila/column</p>
           <p>Texto/Imagenes en fila/column</p>
         </main>
         <div></div>
-        <p>Texto/Imagenes en fila/column</p>
+        <footer>
+          <p>Texto/Imagenes en fila/column</p>
+        </footer>
       </div>
     </main>
-    <footer>
-      <ul class="list-group row">
-        <li class="col">About</li>
-        <li class="col"><a href="#">Contact</a></li>
-        <li class="col">Terms of use</li>
-        <li class="col">Privacy policy</li>
-        <li class="col"><i class="bi-twitter"></i></li>
-        <li class="col"><i class="bi-instagram"></i></li>
-        <li class="col"><i class="bi-youtube"></i></li>
+    <footer class="container-fluid" style="height:100px"><!-- Revisar -->
+      <ul class="row list-inline h-100 text-center align-items-center">
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="#">About</a>
+          </button>
+        </li>
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="formulario.html">Contact</a>
+          </button>
+        </li>
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="#">Terms of use</a>
+          </button>
+        </li>
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="#">Privacy policy</a>
+          </button>
+        </li>
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="#"><i class="bi-twitter h1"></i></a>
+          </button>
+        </li>
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="#"><i class="bi-instagram h1"></i></a>
+          </button>
+        </li>
+        <li class="col-3 col-md h-100 border p-0">
+          <button class="btn rounded-0 w-100 h-100">
+            <a href="#"><i class="bi-youtube h1"></i></a>
+          </button>
+        </li>
       </ul>
     </footer>
     <script
