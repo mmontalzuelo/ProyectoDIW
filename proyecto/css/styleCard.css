@@ -43,7 +43,7 @@ main > header {
   color: red;
 }
 main > div {
-  background-image: url("../assets/images/landscape.png");
+  background-image: url("../assets/images/landscape-sm.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -63,5 +63,14 @@ main > main > * {
 @media screen and (max-width: 576px) {
   main > main {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  main > div {
+    background-image: url("../assets/images/landscape-lg.png");
+  }
+  main > div > p {
+    right: auto;
+    left: 10%;
   }
 }
