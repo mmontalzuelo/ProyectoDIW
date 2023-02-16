@@ -1,11 +1,12 @@
 @import url("./../lib/css/bootstrap.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+/* Diseño general */
 main * {
   margin: 0;
   padding: 0;
 }
-main > * {
+main > *:not(:first-child) {
   border: 1px solid black;
 }
 
@@ -39,9 +40,6 @@ main {
     [img2] 25vh [parrafo] auto [final];
   text-align: center;
 }
-main > header {
-  color: red;
-}
 main > div {
   background-image: url("../assets/images/landscape-sm.png");
   background-repeat: no-repeat;
@@ -55,7 +53,6 @@ main > div > p {
 }
 main > main {
   display: flex;
-  color: blue;
 }
 main > main > * {
   flex: 1;
