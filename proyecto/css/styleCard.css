@@ -2,12 +2,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 /* Diseño general */
+:root {
+  --borderCard:2px solid;
+  font-size: calc(0.5em + 1.5vmin);
+}
 main * {
   margin: 0;
   padding: 0;
-}
-main > *:not(:first-child) {
-  border: 1px solid black;
 }
 
 /* breadcrum */
@@ -35,16 +36,21 @@ main > footer {
 main {
   display: grid;
   grid-template-rows:
-    [nav] auto [head] auto
-    [img1] 25vh [divParrafos] auto
-    [img2] 25vh [parrafo] auto [final];
+    [nav] 0.25fr [head] 1fr
+    [img1] 2.25fr [divParrafos] 0.75fr
+    [img2] 2.25fr [parrafo] 0.75fr [final];
   text-align: center;
+}
+main > header{
+  border:var(--borderCard);
+  border-bottom:0;
 }
 main > div {
   background-image: url("../assets/images/landscape-sm.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
+  border:var(--borderCard);
 }
 main > div > p {
   position: absolute;
@@ -53,13 +59,26 @@ main > div > p {
 }
 main > main {
   display: flex;
+  border-left:var(--borderCard);
+  border-right:var(--borderCard);
 }
 main > main > * {
   flex: 1;
 }
+main > main > :nth-child(even){
+  border-left:var(--borderCard);
+}
+main > footer {
+  border:var(--borderCard);
+  border-top:0;
+}
 @media screen and (max-width: 576px) {
   main > main {
     flex-direction: column;
+  }
+  main > main > :nth-child(even){
+    border-left:0;
+    border-top:var(--borderCard);
   }
 }
 @media screen and (min-width: 768px) {
